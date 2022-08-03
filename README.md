@@ -1,56 +1,49 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Project Name
+# Item catalog
 
-> Description the project.
+> Console app that will help you to keep a record of different types of things you won: books, music albums, and games.
+Everything is based on the UML class diagram presented below.
+The data will be stored in JSON files but we also prepared a database with tables structure analogical to the program's class structure.
+
+
+<img src="./catalog_of_my_things.png" alt="C=UML class diagram for catalog of things" />
 
 
 ## Built With
 
-- Major languages
-- Frameworks
-- Technologies used
+- Ruby, Gems, rspec, SQL
 
-## Live Demo (if available)
+## Setup Project
+- Clone repo by using (https://github.com/AxelSoler/items-catalog.git)
+- Install dependencies with `bundle install`
 
-[Live Demo Link](https://livedemo.com)
+## Usage
+- Run main with `ruby main.rb`
 
+## Tests
+- Run test with `rspec spec -f doc lib`
 
-## Getting Started
+## Author
 
-**This is an example of how you may give instructions on setting up your project locally.**
-**Modify this file to match your project, remove sections that don't apply. For example: delete the testing section if the currect project doesn't require testing.**
+👤 **Santiago Cárdenas**
 
+- GitHub: [@Santiago Cárdenas](https://github.com/Santiago220991)
+- LinkedIn: [Santiago Cárdenas](https://www.linkedin.com/in/alexandersantiagocardenas/)
+- Twitter: [@SanCardenas10](https://twitter.com/SanCardenas10)
 
-To get a local copy up and running follow these simple example steps.
+👤 **Saif Ahmed**
 
-### Prerequisites
+- GitHub: [@Saif Ahmed](https://github.com/saifullah767)
+- LinkedIn: [Saif Ahmed](https://www.linkedin.com/in/saifkj/)
 
-### Setup
+👤 **Axel Soler**
 
-### Install
+- GitHub: [@AxelSoler](https://github.com/AxelSoler)
+- LinkedIn: [Axel Soler](https://www.linkedin.com/in/axel-soler-dev/)
+- Twitter: [Axel Soler](https://twitter.com/AxelSoler18)
 
-### Usage
-
-### Run tests
-
-### Deployment
-
-
-
-## Authors
-
-👤 **Author1**
-
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
-
-👤 **Author2**
-
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+---
 
 ## 🤝 Contributing
 
