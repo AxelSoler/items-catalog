@@ -1,25 +1,19 @@
-require './games/game'
-require './games/author'
-require './books/label'
-require './music_album/genre'
-require './commom_ui'
+require_relative 'game'
+require_relative 'author'
 
 module GameUl
-  include CommonUI
   def create_game
     puts 'add a new game'
-    props = common_properties
+    publish_date = [(print 'Insert publish date: '), gets.rstrip][1]
+    author_first = [(print 'Author first name: '), gets.rstrip][1]
+    author_last = [(print 'Author last name: '), gets.rstrip][1]
     last_played_at = [(print 'Last time you played: '), gets.rstrip][1]
     multiplayer = [(print 'Does it have multiplayer?(y/n): '), gets.rstrip][1]
-    game = Game.new(publish_date: props[:publish_date], last_played_at: last_played_at, multiplayer: multiplayer)
-    label = Label.new(title: props[:title], color: props[:color])
-    author = Author.new(first_name: props[:author_first], last_name: props[:author_last])
-    genre = Genre.new(name: props[:genre_name])
+    game = Game.new(publish_date: publish_date, last_played_at: last_played_at, multiplayer: multiplayer)
+    author = Author.new(first_name: author_first, last_name: author_last)
     author.add_item(game)
-    label.add_item(game)
-    genre.add_item(game)
     puts ''
     puts 'Game created successfully'
-    { game: game, author: author, label: label, genre: genre }
+    { game: game, author: author }
   end
 end
